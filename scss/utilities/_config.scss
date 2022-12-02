@@ -1,0 +1,48 @@
+$font-url--google        : 'https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento';
+$font-family--primary    : 'Comfortaa', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Quattrocento', sans-serif;
+
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+
+$MountainMeadow: #25b79f; //rgba(37, 183, 159, 100);
+$DeepSeaGreen: #07374a; //rgba(7, 55, 74, 100);
+$DesertStorm: #f0f0e6; //rgba(240, 240, 230, 100);
+
+$color-primary   : $MountainMeadow;
+$color-secondary : $DeepSeaGreen;
+$color-light     : $DesertStorm;
+$color-shadow    : rgba($DeepSeaGreen, .2);
+
+$color-palettes: (
+	darkTeal: (
+		xx-light : lighten($DeepSeaGreen, 43%),
+		x-light  : lighten($DeepSeaGreen, 35%),
+	  	light    : lighten($DeepSeaGreen, 12%),
+	  	base     : $DeepSeaGreen,
+	 	dark     : darken($DeepSeaGreen, 8%),
+	 	x-dark   : darken($DeepSeaGreen, 16%)
+	)
+);
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+$br--default    : 5px;
+$br--round      : 50%;
+$trns-duration  : .3s;
+$path--rel      : "../img";
+$break-small	: 768px;
+$break-medium	: 992px;
+$break-large	: 1200px;
+
+
+
+
+
+
+
+
+
+
