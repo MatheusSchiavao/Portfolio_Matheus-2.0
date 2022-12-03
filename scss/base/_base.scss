@@ -39,7 +39,7 @@ body > .container-fluid {
   margin: 20px 0;
 }
 
-.btn:focus, a:focus {
-    outline: none !important
+.btn:focus,
+a:focus {
+  outline: none !important;
 }
-

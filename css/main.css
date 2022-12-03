@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .about-tools ul li,
 .contact-social-icons ul a li {
   text-align: center;
@@ -157,7 +163,8 @@ a:focus {
 .navbar.solid .navbar-brand {
   display: inline-block;
   color: #f0f0e6;
-  transition: color 1s ease 0s;
+  transition: color 0.6s ease 0.08s;
+
 }
 .navbar.solid .navbar-nav > li > a {
   color: #f0f0e6;
@@ -282,14 +289,18 @@ a:focus {
 }
 .portfolio-projects--btn {
   background: transparent;
-  color: #626262;
-  border: 1px solid #626262;
+  border: 1px solid #6610f2;
   border-radius: 5px;
   margin-bottom: 1.25em;
+  color: #0f0f0f;
+  transition-duration: 0.6s;
+  transition-delay: 0.07s;
 }
 .portfolio-projects--btn:hover {
-  background: #626262;
-  color: #f0f0e6;
+  background: #6610f2;
+  color: #f0f0e6; 
+  transition-duration: 0.6s;
+  transition-delay: 0.07s;
 }
 .portfolio-projects--image {
   margin-bottom: 1.875em;
@@ -321,14 +332,14 @@ a:focus {
 .footer {
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 20px;
   background-color: #626262;
   color: #f0f0e6;
 }
 
 #scrollIcon,
 #scrollTopIcon {
-  margin-top: 200px;
+  margin-top: 150px;
   padding: 10px;
   font-size: 1.5em;
   color: #626262;
@@ -429,5 +440,11 @@ a:focus {
 .title .letter {
   display: inline-block;
   line-height: 2em;
+}
+
+abbr[title] {
+  border-bottom: none !important;
+  cursor: default !important;
+  text-decoration-style: none !important;
 }
 /*# sourceMappingURL=main.css.map */

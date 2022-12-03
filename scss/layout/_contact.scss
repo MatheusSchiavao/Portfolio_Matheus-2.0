@@ -1,31 +1,30 @@
 #contact {
   background-color: $color-secondary;
 
-  	h2 {
-  		color: $color-primary;
-  	}
+  h2 {
+    color: $color-primary;
+  }
 }
 
 .contact {
-	&-social-icons {
+  &-social-icons {
+    p {
+      color: $color-primary;
+    }
 
-		p {
-			color: $color-primary;
-		}
+    ul a {
+      color: $color-primary;
+      list-style: none;
 
-		ul a {
-			color: $color-primary;
-			list-style: none;
+      &:hover {
+        color: $color-light;
+      }
 
-			&:hover {
-				color: $color-light;
-			}
-
-			li {
-				@extend %center-align;
-				display: inline-block;
-				padding: 2%;
-			}
-		}
-	}
+      li {
+        @extend %center-align;
+        display: inline-block;
+        padding: 2%;
+      }
+    }
+  }
 }

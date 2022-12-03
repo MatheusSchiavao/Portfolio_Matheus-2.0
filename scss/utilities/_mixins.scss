@@ -9,42 +9,38 @@
   }
 }
 
-@mixin ui-colors($map, $p-el:null) {
+@mixin ui-colors($map, $p-el: null) {
   @each $theme, $color in $map {
     @include m($theme) {
       background-color: $color;
       @if $p-el {
         &:after {
           background-color: lighten($color, 8%);
-        } 
+        }
       }
     }
   }
 }
 
-@mixin p-el(
-  $el,
-  $el-w: null,
-  $el-h: null) {
-    @if $el == "before" or $el == "after" {
-      &:#{$el} {
-       @extend %pseudos;
-       width: $el-w;
-       height: $el-h;
-       @content;
-     }
-   } 
-   @else {
-     @error "`#{$el}` is not a valid pseudo-element.";
-   }
+@mixin p-el($el, $el-w: null, $el-h: null) {
+  @if $el == "before" or $el == "after" {
+    &:#{$el} {
+      @extend %pseudos;
+      width: $el-w;
+      height: $el-h;
+      @content;
+    }
+  } @else {
+    @error "`#{$el}` is not a valid pseudo-element.";
+  }
 }
 
 @mixin img-replace($img, $w, $h, $disp: block) {
-	background-image: url('#{$path--rel}/#{$img}');
-	background-repeat: no-repeat;
-	width: $w;
-	height: $h;
-	display: $disp;
+  background-image: url("#{$path--rel}/#{$img}");
+  background-repeat: no-repeat;
+  width: $w;
+  height: $h;
+  display: $disp;
 }
 
 @mixin pull-left() {
@@ -56,7 +52,7 @@
 
 @mixin doubly($margin: 1em) {
   & + & {
-   margin-left: $margin;
-   @content;
+    margin-left: $margin;
+    @content;
   }
 }

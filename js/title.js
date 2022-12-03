@@ -24,8 +24,7 @@ anime
     delay: (el, i) => 100 + 30 * i,
   });
 
-
-  var textWrapper = document.querySelector(".subtitle");
+var textWrapper = document.querySelector(".subtitle");
 textWrapper.innerHTML = textWrapper.textContent.replace(
   /\S/g,
   "<span class='letter'>$&</span>"

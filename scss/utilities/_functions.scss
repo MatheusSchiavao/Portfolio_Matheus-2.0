@@ -6,6 +6,6 @@
   @return ($target / $context) * 1em;
 }
 
-@function palette($palette, $shade: 'base') {
+@function palette($palette, $shade: "base") {
   @return map-get(map-get($color-palettes, $palette), $shade);
 }
