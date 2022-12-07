@@ -37,6 +37,7 @@
             data-target="#navbar"
             aria-expanded="false"
             aria-controls="navbar"
+            style="margin-right: 36px"
           >
             <span class="sr-only">Alternar de navegação</span>
             <span class="icon-bar"></span>
@@ -50,7 +51,14 @@
             <li id="nav-about"><a href="#about">Sobre</a></li>
             <li id="nav-portfolio"><a href="#portfolio">Portfólio</a></li>
             <li id="nav-contact"><a href="#contact">Contatos</a></li>
-            <li id="nav-flag"><a href="../index.html"><img src="../img/Usa.png" alt="Usa flag" style="height: 21px; margin-top: -7px;"></a></li>
+            <li id="nav-flag" style="display: flex">
+              <a href="../index.html"
+                ><img
+                  src="../img/Usa.png"
+                  alt="Usa flag"
+                  style="height: 21px; margin-top: -7px"
+              /></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -60,7 +68,7 @@
         <div class="col-xs-12">
           <div class="row">
             <div class="col-xs-12 headline">
-              <h3 class="title text-center">Olá, sou Matheus Schiavão!</h3>
+              <h3 class="title text-center">Olá, sou Matheus Schiavão</h3>
               <p class="subtitle text-center">Desenvolvedor web</p>
               <!-- Script para o título se movimentar juntamente com o script na pg title.js -->
               <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -94,8 +102,8 @@
               curso de informática junto com o ensino médio em São José dos
               Campos/SP. Tenho conhecimento de alguns idiomas descritos ao lado,
               estou aprimorando meus conhecimentos para conseguir meu primeiro
-              emprego. Estudando para adicionar Typescript e
-              NodeJS ao meu conjunto de habilidades em breve.
+              emprego. Estudando para adicionar Typescript e NodeJS ao meu
+              conjunto de habilidades em breve.
             </p>
           </div>
           <div class="col-md-6 about-tools">
@@ -158,24 +166,23 @@
             <div class="col-lg-6">
               <div class="row">
                 <div class="col-sm-5 text-center">
-                  <h4 class="portfolio-projects--title">
-                    Projeto em construção.
-                  </h4>
-                  <p class="portfolio-projects--desc">&#9888;</p>
-                  <p class="portfolio-projects--desc"></p>
+                  <h4 class="portfolio-projects--title">Jogo da velha</h4>
+                  <p class="portfolio-projects--desc">
+                    Um jogo simples. Projeto front-end.
+                  </p>
+                  <p class="portfolio-projects--desc">
+                    Usado: HTML, CSS and <abbr title="Javascript">JS</abbr>
+                  </p>
                   <a
                     class="btn btn-rounded portfolio-projects--btn"
-                    href="#"
+                    href="https://matheusschiavao.github.io/Tic-Tac-Toe/"
                     target="_blank"
                     role="button"
                     >Ver projeto</a
                   >
                 </div>
                 <div class="col-sm-7 text-center">
-                  <img
-                    class="portfolio-projects--image"
-                    src="../img/construction.png"
-                  />
+                  <img class="portfolio-projects--image" src="../img/ttt.png" />
                 </div>
               </div>
             </div>
@@ -220,6 +227,7 @@
                     href="#"
                     target="_blank"
                     role="button"
+                    disabled
                     >Ver projeto</a
                   >
                 </div>
@@ -236,23 +244,25 @@
             <div class="col-lg-6">
               <div class="row">
                 <div class="col-sm-5 text-center">
-                  <h4 class="portfolio-projects--title">Jogo da velha</h4>
-                  <p class="portfolio-projects--desc">
-                    Um jogo simples. Projeto front-end.
-                  </p>
-                  <p class="portfolio-projects--desc">
-                    Usado: HTML, CSS and <abbr title="Javascript">JS</abbr>
-                  </p>
+                  <h4 class="portfolio-projects--title">
+                    Projeto em construção.
+                  </h4>
+                  <p class="portfolio-projects--desc">&#9888;</p>
+                  <p class="portfolio-projects--desc"></p>
                   <a
                     class="btn btn-rounded portfolio-projects--btn"
-                    href="https://matheusschiavao.github.io/Tic-Tac-Toe/"
+                    href="#"
                     target="_blank"
                     role="button"
+                    disabled
                     >Ver projeto</a
                   >
                 </div>
                 <div class="col-sm-7 text-center">
-                  <img class="portfolio-projects--image" src="../img/ttt.png" />
+                  <img
+                    class="portfolio-projects--image"
+                    src="../img/construction.png"
+                  />
                 </div>
               </div>
             </div>
@@ -269,6 +279,7 @@
                     href="#"
                     target="_blank"
                     role="button"
+                    disabled
                     >Ver projeto</a
                   >
                 </div>
@@ -302,17 +313,20 @@
         <div class="text-center contact-social-icons">
           <p>Ou me encontre em:</p>
           <ul class="centered">
-            <a href="https://codepen.io/matheusschiavao"
+            <a href="https://codepen.io/matheusschiavao" target="_blank"
               ><li><i class="fa fa-codepen"></i> CodePen</li></a
             >
             <a
               href="https://www.linkedin.com/in/matheus-schiavão-arantes-25206a227/"
+              target="_blank"
               ><li><i class="fa fa-linkedin-square"></i> LinkedIn</li></a
             >
-            <a href="https://github.com/MatheusSchiavao"
+            <a href="https://github.com/MatheusSchiavao" target="_blank"
               ><li><i class="fa fa-github"></i> Github</li></a
             >
-            <a href="https://www.instagram.com/m.schiavao/?hl=pt-br"
+            <a
+              href="https://www.instagram.com/m.schiavao/?hl=pt-br"
+              target="_blank"
               ><li><i class="fa fa-instagram"></i> Instagram</li></a
             >
           </ul>
@@ -332,6 +346,7 @@
           &copy 2022
           <a
             href="https://www.linkedin.com/in/matheus-schiavão-arantes-25206a227/"
+            target="_blank"
             class="name-footer"
             >Matheus Schiavão</a
           >
