@@ -29,7 +29,12 @@
 
   .container {
     width: 657px;
-}
+  }
+
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -200px;
+  }
 
   .pull-left-sm {
     float: left !important;
@@ -42,7 +47,7 @@
 
   .container {
     width: 890px;
-}
+  }
 
   .pull-left-md {
     float: left !important;
@@ -56,9 +61,6 @@
   .pull-left-lg {
     float: left !important;
   }
-}
-* {
-  box-sizing: border-box;
 }
 
 html {
