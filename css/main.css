@@ -27,6 +27,10 @@
     float: none !important;
   }
 
+  .container {
+    width: 657px;
+}
+
   .pull-left-sm {
     float: left !important;
   }
@@ -35,6 +39,10 @@
   .pull-right-md {
     float: none !important;
   }
+
+  .container {
+    width: 890px;
+}
 
   .pull-left-md {
     float: left !important;
