@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-weight: 600;
 }
 
 .about-tools ul li,
@@ -31,9 +32,12 @@
     width: 657px;
   }
 
-  .navbar > .container .navbar-brand,
-  .navbar > .container-fluid .navbar-brand {
-    margin-left: -200px;
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 21px;
   }
 
   .pull-left-sm {
@@ -136,12 +140,12 @@ a:focus {
   display: none;
   margin-top: 10px;
   color: #f0f0e6;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .navbar-default .navbar-nav > li > a {
   color: #f0f0e6;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1em;
   text-transform: lowercase;
   margin: 10px 5px 5px 5px;
@@ -183,6 +187,12 @@ a:focus {
   background-color: #1a060a;
 }
 
+.navbar-collapse #nav-flag a {
+  text-decoration: none;
+  color: #f0f0e6;
+  text-transform: uppercase;
+}
+
 .navbar.solid {
   background: rgb(4, 156, 164);
   background: linear-gradient(
@@ -195,7 +205,8 @@ a:focus {
   box-shadow: 0 0 4px rgba(7, 55, 74, 0.2);
 }
 .navbar.solid .navbar-brand {
-  display: inline-block;
+  display: flex;
+  padding-top: 15px;
   color: #f0f0e6;
   transition: color 0.6s ease 0.08s;
 }
@@ -264,7 +275,7 @@ a:focus {
 }
 .about-tools {
   padding-top: 4.375em;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.5em;
 }
 @media screen and (min-width: 992px) {
